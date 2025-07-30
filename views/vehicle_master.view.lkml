@@ -24,7 +24,8 @@ view: vehicle_master {
 
   dimension: customer_country {
     type: string
-    sql: ${TABLE}.customer_country ;;
+    map_layer_name: countries
+    sql: UPPER(${TABLE}.customer_country) ;;  # normalise 'fr' -> 'FR'
   }
   # Dates and timestamps can be represented in Looker using a dimension group of type: time.
   # Looker converts dates and timestamps to the specified timeframes within the dimension group.
