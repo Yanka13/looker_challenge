@@ -47,6 +47,11 @@ explore: v_dq_pk_violations_vehicle {
   group_label: "Renault Dq"
 }
 
+explore: v_dq_freshness {
+  label: "V Dq Freshness"
+  group_label: "Renault Dq"
+}
+
 
 # ------- Business explores for students -------
 explore: business_data {
